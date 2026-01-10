@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평택문화재단</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">재단정보공개</a>
+                    <a href="#">인권경영</a>
+                    <a href="#">기부/제휴</a>
+                    <a href="#">1:1문의</a>
+                    <a href="#">아카이브</a>
+                    <a href="#">ENG</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="/" class="logo">
+                        <img src="images/logo.png" alt="평택문화재단">
+                        <span class="logo-text">평택문화재단</span>
+                    </a>
+                    
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#">공연·전시·행사</a></li>
+                            <li><a href="#">공간·대관</a></li>
+                            <li><a href="#">교육·지원</a></li>
+                            <li><a href="#">생활문화·정책</a></li>
+                            <li><a href="#">아카이브</a></li>
+                            <li><a href="#">소식·참여</a></li>
+                            <li><a href="#">재단소개</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-actions">
+                        <button class="menu-btn" aria-label="전체메뉴">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="search-btn" aria-label="검색">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 비주얼 + 사이드 메가카드 -->
+    <section class="hero-section">
+        <!-- 좌측 텍스트 영역 -->
+        <div class="hero-text-area">
+            <div class="hero-text-content">
+                <h1 class="hero-title">문화와 예술로<br>행복한 평택</h1>
+                <p class="hero-desc">
+                    평택문화재단은 시민과 함께<br>
+                    문화예술의 가치를 나누고<br>
+                    더 나은 내일을 만들어갑니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 중앙 메인 비주얼 -->
+        <div class="hero-visual">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <img src="images/hero-bg.jpg" alt="메인 비주얼">
+                    <div class="slide-content">
+                        <span class="slide-label">EXHIBITION</span>
+                        <h2 class="slide-title">2026 신년 기획전</h2>
+                        <p class="slide-date">2026.01.15 - 03.15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" aria-label="이전">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="slider-pagination">
+                    <span class="current">01</span>
+                    <span class="divider">/</span>
+                    <span class="total">05</span>
+                </div>
+                <button class="slider-btn next" aria-label="다음">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- 우측 메가카드 (세로 배치) -->
+        <aside class="mega-cards">
+            <a href="#" class="mega-card">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="card-text">
+                    <span class="card-title">평택아트센터</span>
+                </div>
+            </a>
+            <a href="#" class="mega-card">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M3 10H21" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M16 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="card-text">
+                    <span class="card-title">티켓예매</span>
+                </div>
+            </a>
+            <a href="#" class="mega-card">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 21H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M5 21V7L12 3L19 7V21" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M9 21V15H15V21" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="card-text">
+                    <span class="card-title">대관신청</span>
+                </div>
+            </a>
+            <a href="#" class="mega-card">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 19.5V4.5C4 3.67 4.67 3 5.5 3H18.5C19.33 3 20 3.67 20 4.5V19.5C20 20.33 19.33 21 18.5 21H5.5C4.67 21 4 20.33 4 19.5Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 7H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M8 11H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M8 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="card-text">
+                    <span class="card-title">교육신청</span>
+                </div>
+            </a>
+        </aside>
+    </section>
+
+    <!-- 공연·전시 섹션 -->
+    <section class="section section-programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="en">Programs</span>
+                    <span class="ko">공연·전시</span>
+                </h2>
+                <a href="#" class="more-link">
+                    <span>더보기</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="program-grid">
+                <article class="program-card featured">
+                    <a href="#">
+                        <div class="card-image">
+                            <img src="images/performance1.jpg" alt="공연1">
+                        </div>
+                        <div class="card-info">
+                            <span class="category">공연</span>
+                            <h3>2026 신년음악회</h3>
+                            <p class="venue">평택아트센터 대공연장</p>
+                            <p class="date">2026.01.15 - 02.28</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="program-card">
+                    <a href="#">
+                        <div class="card-image">
+                            <img src="images/performance2.jpg" alt="전시">
+                        </div>
+                        <div class="card-info">
+                            <span class="category">전시</span>
+                            <h3>현대미술 특별전</h3>
+                            <p class="venue">전시관</p>
+                            <p class="date">2026.01.20 - 03.15</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="program-card">
+                    <a href="#">
+                        <div class="card-image">
+                            <img src="images/performance3.jpg" alt="행사">
+                        </div>
+                        <div class="card-info">
+                            <span class="category">행사</span>
+                            <h3>시민문화축제</h3>
+                            <p class="venue">문화공원</p>
+                            <p class="date">2026.02.01</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 소식 섹션 -->
+    <section class="section section-news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="en">News</span>
+                    <span class="ko">소식</span>
+                </h2>
+                <a href="#" class="more-link">
+                    <span>더보기</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <a href="#">
+                        <span class="news-tag">공지</span>
+                        <h3>2026년 평택문화재단 신년 인사</h3>
+                        <time>2026.01.01</time>
+                    </a>
+                </article>
+                <article class="news-card">
+                    <a href="#">
+                        <span class="news-tag">채용</span>
+                        <h3>2026년 상반기 채용 공고</h3>
+                        <time>2026.01.05</time>
+                    </a>
+                </article>
+                <article class="news-card">
+                    <a href="#">
+                        <span class="news-tag">행사</span>
+                        <h3>시민 문화축제 참가 신청 안내</h3>
+                        <time>2026.01.08</time>
+                    </a>
+                </article>
+                <article class="news-card">
+                    <a href="#">
+                        <span class="news-tag">교육</span>
+                        <h3>1분기 문화예술교육 수강생 모집</h3>
+                        <time>2026.01.10</time>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="평택문화재단">
+                </div>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">이메일무단수집거부</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <address>
+                    (우)17711 경기도 평택시 평택로 123 평택문화재단<br>
+                    대표전화 031-123-4567 | 팩스 031-123-4568 | 이메일 info@ptcf.or.kr
+                </address>
+                <p class="copyright">© 2026 Pyeongtaek Culture Foundation. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="페이스북"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="#" aria-label="인스타그램"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a>
+                    <a href="#" aria-label="유튜브"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 9.5a5 5 0 0 0-5-5H6a5 5 0 0 0-5 5v5a5 5 0 0 0 5 5h12a5 5 0 0 0 5-5v-5zm-14 7v-9l6 4.5-6 4.5z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
