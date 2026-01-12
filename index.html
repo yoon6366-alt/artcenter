@@ -344,6 +344,102 @@
         </div>
     </section>
 
+    <!-- 캘린더 섹션 -->
+    <section class="section section-calendar">
+        <div class="container">
+            <div class="calendar-title">
+                <span class="title-bar"></span>
+                <h2>공연 전시 행사캘린더</h2>
+                <span class="title-bar"></span>
+                <button class="calendar-expand-btn" aria-label="펼치기">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- 가로형 캘린더 -->
+            <div class="calendar-horizontal">
+                <div class="calendar-month-nav">
+                    <button class="cal-nav prev-month" aria-label="이전 달">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="current-month">2026.1</span>
+                    <button class="cal-nav next-month" aria-label="다음 달">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="calendar-days-row" id="calendarDays">
+                    <!-- JS로 동적 생성 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 공간소개 섹션 -->
+    <section class="section section-spaces">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="en">Spaces</span>
+                    <span class="ko">공간소개</span>
+                </h2>
+                <a href="#" class="more-link">
+                    <span>전체보기</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="spaces-carousel">
+                <div class="spaces-track">
+                    <div class="space-item side prev">
+                        <img src="images/space-west.jpg" alt="웨스트홀">
+                    </div>
+                    <div class="space-item main active">
+                        <img src="images/space-artcenter.jpg" alt="평택아트센터">
+                        <button class="vr-tour-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M2 10C2 10 5 4 12 4C19 4 22 10 22 10C22 10 19 16 12 16C5 16 2 10 2 10Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>VR 투어</span>
+                        </button>
+                        <div class="space-overlay">
+                            <span class="space-label">공간소개</span>
+                            <h3>시민회관</h3>
+                            <p>평택시 시민회관으로 대강연장, 소회의실, 다목적홀 등을 운영하고 있습니다.</p>
+                            <a href="#" class="detail-btn">자세히보기</a>
+                            <div class="space-controls">
+                                <button class="space-prev">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                    Prev
+                                </button>
+                                <button class="space-next">
+                                    Next
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-item side next">
+                        <img src="images/space-south.jpg" alt="사우스홀">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 소식 섹션 -->
     <section class="section section-news">
         <div class="container">
