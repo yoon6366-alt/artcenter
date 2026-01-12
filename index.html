@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>평택문화재단</title>
+    <title>평택시문화재단</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,8 +31,8 @@
             <div class="container">
                 <div class="header-content">
                     <a href="/" class="logo">
-                        <img src="images/logo.png" alt="평택문화재단">
-                        <span class="logo-text">평택문화재단</span>
+                        <img src="images/logo.png" alt="평택시문화재단">
+                        <span class="logo-text">평택시문화재단</span>
                     </a>
                     
                     <nav class="main-nav">
@@ -72,7 +72,7 @@
             <div class="hero-text-content">
                 <h1 class="hero-title">문화와 예술로<br>행복한 평택</h1>
                 <p class="hero-desc">
-                    평택문화재단은 시민과 함께<br>
+                    평택시문화재단은 시민과 함께<br>
                     문화예술의 가치를 나누고<br>
                     더 나은 내일을 만들어갑니다.
                 </p>
@@ -227,6 +227,123 @@
         </div>
     </section>
 
+    <!-- 시설별 전시/공연 섹션 -->
+    <section class="section section-facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="en">Facilities</span>
+                    <span class="ko">시설별 전시·공연</span>
+                </h2>
+                <a href="#" class="more-link">
+                    <span>전시일정 보기</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- 카테고리 탭 -->
+            <div class="facility-tabs">
+                <button class="tab-btn active" data-category="all">전체</button>
+                <button class="tab-btn" data-category="artcenter">Art Center</button>
+                <button class="tab-btn" data-category="west">West</button>
+                <button class="tab-btn" data-category="south">South</button>
+                <button class="tab-btn" data-category="north">North</button>
+                <button class="tab-btn" data-category="anjungli">Anjungli</button>
+                <button class="tab-btn" data-category="soriter">Soriter</button>
+            </div>
+            
+            <!-- 가로 스크롤 카드 -->
+            <div class="facility-slider-wrapper">
+                <button class="slider-arrow prev" aria-label="이전">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="facility-slider">
+                    <article class="facility-card" data-category="artcenter">
+                        <a href="#">
+                            <div class="card-image">
+                                <img src="images/facility1.jpg" alt="전시1">
+                            </div>
+                            <div class="card-info">
+                                <span class="location">아트센터</span>
+                                <h3>상호: 무한변주</h3>
+                                <p class="date">2026.01.27-2026.03.29</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="facility-card" data-category="west">
+                        <a href="#">
+                            <div class="card-image">
+                                <img src="images/facility2.jpg" alt="전시2">
+                            </div>
+                            <div class="card-info">
+                                <span class="location">웨스트</span>
+                                <h3>MMCA 해외명작: 수련과 상들리에</h3>
+                                <p class="date">2025.10.2-2027.1.3</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="facility-card" data-category="south">
+                        <a href="#">
+                            <div class="card-image">
+                                <img src="images/facility3.jpg" alt="전시3">
+                            </div>
+                            <div class="card-info">
+                                <span class="location">사우스</span>
+                                <h3>조우(遭遇), 모던아트협회 1957-1960</h3>
+                                <p class="date">2025.10.02-2026.03.08</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="facility-card" data-category="north">
+                        <a href="#">
+                            <div class="card-image">
+                                <img src="images/facility4.jpg" alt="전시4">
+                            </div>
+                            <div class="card-info">
+                                <span class="location">노스</span>
+                                <h3>올해의 작가상 2025</h3>
+                                <p class="date">2025.08.29-2026.02.01</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="facility-card" data-category="anjungli">
+                        <a href="#">
+                            <div class="card-image">
+                                <img src="images/facility5.jpg" alt="전시5">
+                            </div>
+                            <div class="card-info">
+                                <span class="location">안중리</span>
+                                <h3>평택의 빛: 지역작가 특별전</h3>
+                                <p class="date">2026.02.01-2026.04.30</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="facility-card" data-category="soriter">
+                        <a href="#">
+                            <div class="card-image">
+                                <img src="images/facility6.jpg" alt="전시6">
+                            </div>
+                            <div class="card-info">
+                                <span class="location">소리터</span>
+                                <h3>청년예술가 기획전시</h3>
+                                <p class="date">2026.01.15-2026.03.15</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <button class="slider-arrow next" aria-label="다음">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- 소식 섹션 -->
     <section class="section section-news">
         <div class="container">
@@ -247,7 +364,7 @@
                 <article class="news-card">
                     <a href="#">
                         <span class="news-tag">공지</span>
-                        <h3>2026년 평택문화재단 신년 인사</h3>
+                        <h3>2026년 평택시문화재단 신년 인사</h3>
                         <time>2026.01.01</time>
                     </a>
                 </article>
@@ -281,7 +398,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <img src="images/logo-white.png" alt="평택문화재단">
+                    <img src="images/logo-white.png" alt="평택시문화재단">
                 </div>
                 <div class="footer-links">
                     <a href="#">개인정보처리방침</a>
@@ -291,7 +408,7 @@
             </div>
             <div class="footer-bottom">
                 <address>
-                    (우)17711 경기도 평택시 평택로 123 평택문화재단<br>
+                    (우)17711 경기도 평택시 평택로 123 평택시문화재단<br>
                     대표전화 031-123-4567 | 팩스 031-123-4568 | 이메일 info@ptcf.or.kr
                 </address>
                 <p class="copyright">© 2026 Pyeongtaek Culture Foundation. All Rights Reserved.</p>

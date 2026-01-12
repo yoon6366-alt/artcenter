@@ -214,4 +214,52 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-console.log('평택문화재단 홈페이지 초기화 완료');
+// ========== 시설별 전시·공연 탭 필터링 ==========
+const tabBtns = document.querySelectorAll('.tab-btn');
+const facilityCards = document.querySelectorAll('.facility-card');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // 활성 탭 변경
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const category = btn.dataset.category;
+        
+        // 카드 필터링
+        facilityCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.classList.remove('hidden');
+                card.style.display = 'block';
+            } else {
+                card.classList.add('hidden');
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+// ========== 시설별 슬라이더 좌우 버튼 ==========
+const facilitySlider = document.querySelector('.facility-slider');
+const prevArrow = document.querySelector('.slider-arrow.prev');
+const nextArrow = document.querySelector('.slider-arrow.next');
+
+if (facilitySlider && prevArrow && nextArrow) {
+    const scrollAmount = 300;
+    
+    prevArrow.addEventListener('click', () => {
+        facilitySlider.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+    
+    nextArrow.addEventListener('click', () => {
+        facilitySlider.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+}
+
+console.log('평택시문화재단 홈페이지 초기화 완료');
